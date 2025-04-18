@@ -14,9 +14,11 @@
     <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.js"></script>
 
     <script type="text/babel">
+    const {useState} = React;
   // Define a component called Greetings
   function Greetings() {
-    return <h1>Hello readers, Thankyou for reading this blog !</h1>;
+    const [name,setName]=useState("Franchetto");
+    return <h1>Hello {name}, Thank you for reading this blog !</h1>;
   }
 
   // Render the component to the DOM
